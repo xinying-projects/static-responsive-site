@@ -247,7 +247,6 @@ dd {
 /* #endregion socials */
 
 /* #region partners */
-
 .partner {
   border-top: 1px solid #252525;
   border-bottom: 1px solid #252525;
@@ -260,6 +259,14 @@ dd {
 
 .partner-list {
   justify-content: space-between;
+}
+
+.partner-item {
+  max-width: 10%;
+}
+
+.partner-item img {
+  width: 100%;
 }
 
 /* #endregion partners */
@@ -440,7 +447,7 @@ dd {
 
 .contact-desc {
   flex: 1.5;
-  margin-left: 1em;
+  margin-left: 4em;
 }
 
 .contact-text {
