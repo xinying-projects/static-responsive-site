@@ -1,0 +1,185 @@
+/* #region generic styles */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+/* #endregion generic styles */
+
+/* #region header */
+.logo {
+  width: 100px;
+  height: 38px;
+  background-image: url("../../assets/images/logo-mobile.png");
+}
+
+.header-title-desc {
+  font-size: 2.5rem;
+  font-family: "Gilroy-Light";
+}
+/* #endregion header */
+
+/* #region about */
+.about {
+  padding: 0;
+  flex-direction: column;
+}
+
+.about-desc {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+/* #endregion about */
+
+/* #region partners */
+.partner {
+  padding: 1em 0;
+}
+
+.partner-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-item {
+  margin: 0.25em 0.25em;
+  align-self: flex-start;
+}
+/* #endregion partners */
+
+/* #region service */
+.services {
+  flex-direction: column;
+}
+
+.services img {
+  width: 100%;
+}
+
+.service-desc {
+  width: 100%;
+  padding: 0;
+}
+
+.service-item {
+  padding: 2em;
+  border-bottom: 1px solid #252525;
+}
+/* #endregion service */
+
+/* #region selected work */
+
+.work-menu {
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.work-title {
+  font-size: 2rem;
+}
+
+.work-item {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.all-work-cta {
+  display: flex;
+  flex-direction: column;
+}
+/* #endregion selected work */
+
+/* #region clients */
+.client-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-item {
+  padding: 0;
+}
+
+.client-item-logo {
+  width: 30%;
+}
+/* #endregion clients */
+
+/* #region teams */
+.team-list {
+  flex-direction: column;
+}
+
+.team-list .team-item {
+  align-items: center;
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.team-list .team-item img {
+  width: 100%;
+}
+
+.team-list .join-cta {
+  width: 100%;
+  padding: 0;
+}
+
+.team-list .join-cta-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.team-list .join-cta-btn {
+  margin: 1em 0;
+  width: 100%;
+}
+/* #endregion teams */
+
+/* #region contact */
+.contact .container {
+  flex-direction: column;
+}
+
+.contact-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-text {
+  font-size: 1.75rem;
+}
+
+.contact-cta {
+  margin: 1em 0;
+}
+
+.contact-title {
+  font-size: 2rem;
+}
+/* #endregion contact */
+
+/* #region footer */
+.footer .container {
+  flex-direction: column;
+}
+
+.footer .container span {
+  font-size: 0.75rem;
+}
+
+.footer .social-media-list {
+  margin: 1em 0;
+}
+/* #endregion footer */

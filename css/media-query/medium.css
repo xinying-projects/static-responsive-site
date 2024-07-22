@@ -1,0 +1,151 @@
+/* #region generic styles */
+body {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 6.5rem;
+}
+
+h2 {
+  font-size: 4.75rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+/* #endregion generic styles */
+
+/* #region header */
+.header-title-desc {
+  font-size: 5rem;
+}
+/* #endregion header */
+
+/* #region about */
+.about {
+  padding: 0;
+  flex-direction: column;
+}
+
+.about-desc {
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+/* #endregion about */
+
+/* #region partners */
+.partner {
+  padding: 1em 0;
+}
+
+.partner-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-item {
+  margin: 0.25em 0.25em;
+  align-self: flex-start;
+}
+/* #endregion partners */
+
+/* #region service */
+.services {
+  flex-direction: column;
+}
+
+.services img {
+  width: 100%;
+}
+
+.service-desc {
+  width: 100%;
+  padding: 0;
+}
+
+.service-item {
+  padding: 2em;
+  border-bottom: 1px solid #252525;
+}
+
+/* #endregion service */
+
+/* #region selected work */
+.work-menu {
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.work-title {
+  font-size: 2rem;
+}
+
+.work-item {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.all-work-cta {
+  display: flex;
+  flex-direction: column;
+}
+/* #endregion selected work */
+
+/* #region clients */
+.client-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-item {
+  padding: 0;
+}
+
+/* #endregion clients */
+
+/* #region teams */
+.team-list {
+  flex-wrap: wrap;
+}
+
+.team-item {
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+
+.team-item img {
+  width: 100%;
+}
+
+.team-list .join-cta {
+  width: 100%;
+  padding: 0;
+}
+
+.join-cta-btn {
+  margin: 1em 0;
+}
+/* #endregion teams */
+
+/* #region contact */
+.contact .container {
+  flex-direction: column;
+}
+
+.contact-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 1.75rem;
+}
+
+.contact-cta {
+  align-self: center;
+  margin: 1em 0;
+}
+/* #endregion contact */

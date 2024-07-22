@@ -1,0 +1,476 @@
+/* Importing the required fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* #region typography */
+@font-face {
+  font-family: "Gilroy-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/gilroy-thin.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/gilroy-light.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/gilroy-regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/gilroy-medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts//gilroy-semibold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/gilroy-bold.ttf");
+}
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading1: "Gilroy-Semibold", sans-serif;
+  --font-heading2: "Gilroy-Thin", sans-serif;
+  --font-heading3: "Gilroy-Regular", sans-serif;
+  --font-size-body: 16px;
+  --font-size-heading1: 7.5em;
+  --font-size-heading2: 7em;
+  --font-size-heading3: 2.5em;
+  --line-height-body: 1.6;
+  --color-body: #252525;
+  --color-heading: #252525;
+  --color-link: #252525;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+
+h1 {
+  font-family: var(--font-heading1);
+  font-size: var(--font-size-heading1);
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-heading2);
+  font-size: var(--font-size-heading2);
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--font-heading3);
+  font-size: var(--font-size-heading3);
+}
+
+/* #endregion typography */
+
+/* #region generic styles */
+body {
+  background-color: #f5f3ea;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+.fx {
+  display: flex;
+}
+
+.fg-1 {
+  flex: 3/5;
+}
+
+.fg-2 {
+  flex: 2/5;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 0.9em;
+}
+
+.btn {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  border: 0;
+  cursor: pointer;
+  background-color: #252525;
+  padding: 0.9em 1.9em;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.join-cta-title {
+  text-transform: uppercase;
+  font-family: "Gilroy-Bold";
+  font-size: 3.75rem;
+}
+/* #endregion generic styles */
+
+/* #region header */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+
+.logo {
+  width: 390px;
+  height: 44px;
+  background-image: url("../assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-nav a {
+  font-family: "Gilroy-Semibold";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-title-desc {
+  font-size: var(--font-size-heading1);
+  font-family: "Gilroy-Light";
+}
+
+.header-hero-image {
+  width: 100%;
+}
+/* #endregion header */
+
+/* #region about */
+.about {
+  padding: 3em;
+  padding-right: 0;
+  /* line-height: 6re; */
+}
+
+.about-container {
+  padding: 3.75em;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #252525;
+}
+
+.about-desc {
+  font-family: "Gilroy-Light";
+  font-size: 2.5rem;
+  margin-right: 1em;
+}
+
+.about-desc strong {
+  font-family: "Gilroy-Semibold";
+}
+
+.about-title {
+  margin-bottom: 0.75em;
+  padding-right: 1em;
+  color: #fff;
+  font-family: "Gilroy-Medium";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* #endregion about */
+
+/* #region socials */
+.social-media-item {
+  padding-right: 1.25em;
+}
+
+.social-media-item svg {
+  height: 50px;
+  width: 50px;
+  vertical-align: bottom;
+}
+
+.social-media-item svg path {
+  fill: #fff;
+}
+/* #endregion socials */
+
+/* #region partners */
+
+.partner {
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+  padding: 3.75em 0;
+}
+
+.partner-item {
+  padding: 0.9em 1.9em;
+}
+
+.partner-list {
+  justify-content: space-between;
+}
+
+/* #endregion partners */
+
+/* #region services */
+
+.services img {
+  width: 50%;
+}
+
+.service-desc {
+  width: 50%;
+  padding: 0 3.625em;
+}
+
+.service-desc h2 {
+  text-align: center;
+}
+
+.service-item {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  border-bottom: 1px solid #252525;
+}
+/* #endregion services */
+
+/* #region selected work */
+
+.work-menu {
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.work-item {
+  width: 30%;
+}
+
+.work-menu img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-title {
+  text-transform: uppercase;
+  font-family: "Gilroy-Bold";
+  font-size: 2.75rem;
+}
+
+.work-tag {
+  display: inline-block;
+  font-family: "Gilroy-Medium";
+  font-size: 1.25rem;
+  padding: 0.5em 1.9em;
+  margin: 0.25em;
+}
+
+.work-cta {
+  margin: 2em 0;
+  text-align: right;
+}
+
+.all-work-cta {
+  text-align: center;
+}
+/* #endregion selected work */
+
+/* #region clients */
+.client-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.client-item {
+  padding: 2em;
+}
+
+.client-item-logo {
+  width: 20%;
+  margin: 1em 0;
+}
+
+.client-item-title {
+  font-family: "Gilroy-Bold";
+  line-height: 1.2;
+}
+
+.client-item-text {
+  margin: 2em 0;
+}
+
+.client-name {
+  font-weight: 600;
+}
+
+.client-avatar {
+  align-items: center;
+}
+
+.client-avatar-image {
+  max-width: 70px;
+  margin-right: 1em;
+}
+
+/* #endregion clients */
+
+/* #region teams */
+.team-list {
+  justify-content: space-between;
+}
+
+.team-item {
+  flex: 1 1 20%;
+  max-width: 20%;
+  flex-direction: column;
+  margin: 2em 1em;
+}
+
+.team-item img {
+  margin: 1em 0;
+}
+
+.team-member-name {
+  font-family: "Gilroy-Bold";
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.team-member-work-title {
+  font-family: "Gilroy-Medium";
+  font-size: 1.25rem;
+}
+
+.team-list .join-cta {
+  flex-basis: 48%;
+  min-width: 48%;
+  padding: 0 3em;
+  justify-content: center;
+}
+
+.join-cta-subtitle {
+  text-transform: uppercase;
+  font-family: "Gilroy-Regular";
+  font-size: 2rem;
+}
+
+.join-cta-btn {
+  align-self: flex-start;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.team .social-media-item {
+  padding-right: 0.75em;
+}
+
+.team .social-media-item svg {
+  height: 30px;
+  width: 30px;
+  vertical-align: bottom;
+}
+
+.team .social-media-item svg path {
+  fill: #000;
+}
+/* #endregion teams */
+
+/* #region contact */
+.contact {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 4.375rem 0;
+}
+
+.contact h2 {
+  flex: 1;
+}
+
+.contact-desc {
+  flex: 1.5;
+  margin-left: 1em;
+}
+
+.contact-text {
+  font-family: "Gilroy-Medium";
+  font-size: 2.25rem;
+}
+
+.contact-cta {
+  margin-top: 1em;
+}
+/* #endregion contact */
+
+/* #region footer */
+.footer .container {
+  padding: 1.5em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .social-media-item {
+  padding-right: 1em;
+}
+
+.footer .social-media-item svg {
+  height: 30px;
+  width: 30px;
+  vertical-align: bottom;
+}
+
+.footer .social-media-item svg path {
+  fill: #000;
+}
+/* #endregion footer */
