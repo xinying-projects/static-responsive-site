@@ -50,6 +50,7 @@ h3 {
 }
 
 .partner-item {
+  max-width: none;
   margin: 0.25em 0.25em;
   align-self: flex-start;
 }
